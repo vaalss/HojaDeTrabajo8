@@ -58,7 +58,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
 
         while (continuar) {
             int left = 2 * index + 1;
-            int right = 2 * index - 1;
+            int right = 2 * index + 2;
 
             int min = index;
 
