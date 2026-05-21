@@ -1,23 +1,48 @@
 package src;
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        VectorHeap<Patient> cola = new VectorHeap<>();
+        Scanner scanner = new Scanner(System.in);
 
-        ArrayList<Patient> pacientes =
-                FileHelper.loadPatients("pacientes.txt");
+        System.out.println("Sistema de Emergencias");
+        System.out.println("\n1. VectorHeap");
+        System.out.println("2. Java PriorityQueue");
+        System.out.print("Seleccione la implementación que desea utilziar: ");
+
+        int opcion = scanner.nextInt();
+        scanner.nextLine();
+
+        PriorityQueueInterface<Patient> cola = null;
+
+        switch (opcion) {
+            case 1:
+                cola = QueueFactory.createQueue("heap");
+                break;
+            case 2:
+                cola = QueueFactory.createQueue("java");
+                break;
+            default:
+                System.out.println("Opción inválida.");
+                return;
+        }
+
+        ArrayList<Patient> pacientes = FileHelper.loadPatients("pacientes.txt");
 
         for (Patient paciente : pacientes) {
             cola.add(paciente);
         }
 
-        System.out.println("Orden de atención:\n");
+        System.out.println("\nOrden de atención:\n");
 
         while (!cola.isEmpty()) {
             System.out.println(cola.remove());
         }
+
+        scanner.close();
     }
 }

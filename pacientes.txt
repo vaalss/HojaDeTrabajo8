@@ -1,0 +1,20 @@
+Juan Perez, fractura de pierna, C
+Maria Ramirez, apendicitis, A
+Lorenzo Toledo, chikunguya, E
+Carmen Sarmientos, dolores de parto, B
+Pedro Gomez, ataque cardiaco, A
+Ana Lopez, fiebre alta, D
+Carlos Ruiz, accidente automovilistico, B
+Lucia Morales, dolor de cabeza, E
+Roberto Diaz, quemaduras graves, A
+Sofia Castillo, intoxicacion alimentaria, C
+Diego Herrera, hemorragia interna, A
+Valeria Mendez, gripe comun, E
+Fernando Castro, dificultad para respirar, B
+Gabriela Torres, luxacion de hombro, C
+Andres Molina, paro cardiaco, A
+Paula Reyes, migraña severa, D
+Ricardo Flores, herida profunda, B
+Daniela Cruz, infeccion estomacal, C
+Miguel Santos, deshidratacion, D
+Camila Ortiz, convulsiones, A

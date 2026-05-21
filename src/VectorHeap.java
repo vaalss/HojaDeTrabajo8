@@ -1,7 +1,7 @@
 package src;
 import java.util.ArrayList;
 
-public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
+public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterface<E>{
     
     private ArrayList<E> data;
 

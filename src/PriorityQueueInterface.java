@@ -1,5 +1,5 @@
 package src;
-public interface PriorityQueue<E extends Comparable<E>>{
+public interface PriorityQueueInterface<E extends Comparable<E>>{
     void add(E value);
     E remove();
     E getFirst();
