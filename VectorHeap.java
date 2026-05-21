@@ -11,6 +11,7 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueue<E>{
     @Override
     public void add(E value) {
         data.add(value);
+        siftUp(data.size() - 1);
 
     }
 
