@@ -4,6 +4,12 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Clase auxiliar para cargar pacientes desde un archivo de texto
+ * 
+ * @author Valeria Hernández 25086
+ */
+
 public class FileHelper {
     public static ArrayList<Patient> loadPatients(String fileName) {
         ArrayList<Patient> patients = new ArrayList<>();

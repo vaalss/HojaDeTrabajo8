@@ -1,4 +1,16 @@
 package src;
+
+/**
+ * Representa un paciente dentro del sistema de emergencias
+ * 
+ * Cada paciente tiene un nombre, un síntoma y una prioridad
+ * Donde A tiene mayor prioridad que B, y así sucesivamente
+ * 
+ * La clase implementa la interfaz Comparable para permitir la comparación de prioridades
+ * 
+ * @author Valeria Hernández 25086
+ */
+
 public class Patient implements Comparable<Patient>{
     private String name;
     private String symptom;

@@ -1,3 +1,7 @@
+/**
+ * @author: Valeria Hernández 25086
+ */
+
 package src;
 
 import java.util.ArrayList;
@@ -39,7 +43,7 @@ public class Main {
 
         System.out.println("\nOrden de atención:\n");
 
-        while (!cola.isEmpty()) {
+        while (!cola.isEmpty()) { //Los imprime en el orden en que van saliendo
             System.out.println(cola.remove());
         }
 

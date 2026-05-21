@@ -1,3 +1,15 @@
+/**
+ * Implementación de una cola de prioridad usando MinHeap y ArrayList
+ * 
+ * El elemento con menor prioridad se encuentra en la raíz
+ * y cada nodo padre tiene una prioridad menor o igual a la de sus hijos
+ * 
+ * Esta implementación utiliza las operaciones siftUp y siftDown 
+ * para mantener la propiedad del heap después de insertar o eliminar elementos
+ * 
+ * @author Valeria Hernández 25086
+ */
+
 package src;
 import java.util.ArrayList;
 
@@ -9,13 +21,25 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
         data = new ArrayList<>();
     }
 
+    /**
+     * Inserta un elemento en el heap y reorganiza la estructura 
+     * utilizando siftUp
+     * 
+     * @param value elemento a insertar
+     */
     @Override
     public void add(E value) {
         data.add(value);
-        siftUp(data.size() - 1);
+        siftUp(data.size() - 1); //reorganiza depsués de agregar un elemento nuevo al final del ArrayList
 
     }
 
+    /**
+     * Reorganiza el heap moviendo un elemento hacia arriba hasta 
+     * mantener la propiedad del MinHeap
+     * 
+     * @param index posición del elemento
+     */
     private void siftUp(int index) {
         while (index > 0) {
             int parent = (index - 1) / 2;
@@ -34,6 +58,14 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
         }
     }
 
+
+    /**
+     * Elimina y retorna el elemento con mayor prioridad del heap.
+     * 
+     * Después de remover la raíz, el heap se reorganiza utilizando siftDown
+     * 
+     * @return elemento con mayor prioridad
+     */
     @Override
     public E remove() {
         if (isEmpty()) {
@@ -54,6 +86,12 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
         return root;
     }
 
+    /**
+     * Reorganiza el heap moviendo un elemento hacia abajo 
+     * hasta mantener la propiedad del MinHeap
+     * 
+     * @param index posición del elemento
+     */
     private void siftDown(int index) {
         int size = data.size();
         boolean continuar = true;
@@ -84,6 +122,11 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
         } 
     }
 
+    /**
+     * Retorna el elemento con mayor prioridad sin eliminarlo
+     * 
+     * @return primer elemento del heap
+     */
     @Override
     public E getFirst() {
         if (isEmpty()) {
@@ -93,11 +136,21 @@ public class VectorHeap<E extends Comparable<E>> implements PriorityQueueInterfa
         return data.get(0);
     }
 
+    /**
+     * Verifica si el heap está vacío.
+     * 
+     * @return true si está vacío, false si no
+     */
     @Override
     public boolean isEmpty() {
         return data.isEmpty();
     }
 
+    /**
+     * Retorna la cantidad de elementos almacenados en el heap
+     * 
+     * @return tamaño del heap
+     */
     @Override
     public int size() {
         return data.size();

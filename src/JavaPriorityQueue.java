@@ -2,6 +2,12 @@ package src;
 
 import java.util.PriorityQueue;
 
+/**
+ * Esta clase adapta los métodos de Java PriorityQueue a la interfaz PriorityQueueInterface
+ * 
+ * @author Valeria Hernández 25086
+ */
+
 public class JavaPriorityQueue<E extends Comparable<E>> implements PriorityQueueInterface<E> {
     
     private PriorityQueue<E> queue;
