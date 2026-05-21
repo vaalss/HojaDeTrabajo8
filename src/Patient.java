@@ -1,3 +1,4 @@
+package src;
 public class Patient implements Comparable<Patient>{
     private String name;
     private String symptom;

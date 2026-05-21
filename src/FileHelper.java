@@ -1,9 +1,8 @@
+package src;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class FileHelper {
     public static ArrayList<Patient> loadPatients(String fileName) {

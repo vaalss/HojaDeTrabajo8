@@ -1,3 +1,4 @@
+package src;
 import java.util.ArrayList;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
             cola.add(paciente);
         }
 
-        System.out.println("Orden de atención:");
+        System.out.println("Orden de atención:\n");
 
         while (!cola.isEmpty()) {
             System.out.println(cola.remove());
