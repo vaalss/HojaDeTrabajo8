@@ -1,0 +1,9 @@
+Juan, fractura de pierna, C
+Josué, apendicitis, A
+Carmen, dolores de parto, B
+Pedro, ataque cardiaco, A
+Ana, fiebre, D
+Carlos, accidente automovilistico, B
+Lucia, dolor de cabeza, E
+Roberto, quemaduras graves, A
+Sofia, intoxicacion, C
